@@ -17,7 +17,7 @@ void rec_param(float* param){//Função que recebe os parâmetros do DPV
   while(!Serial.available()){}
   unsigned int i = 0;
   while(Serial.available()){
-    char a = Serial.read();//A mensagem recebida é da forma PARAM_01/PARAM_02/PARAM_03/PARAM_04/PARAM_05/e onde 'e' indica o fim da tranmissão dos dados
+    char a = Serial.read();//A mensagem recebida é da forma PARAM_01/PARAM_02/PARAM_03/PARAM_04/PARAM_05/PARAM_06/PARAM_07/e onde 'e' indica o fim da tranmissão dos dados
     if(a == '/'){
       param[i] = aux.toFloat();
       aux = ""; 
@@ -57,7 +57,7 @@ void end_transmition(){
 
 
 void loop() {
-  float param [5];//[0]V_inicio,[1]V_fim,[2]V_pulso,[3]V_passo,[4]T_pulso;
+  float param [5];//[0]Current_Range,[1]V_inicio,[2]V_fim,[3]V_pulso,[4]V_passo,[5]T_pulso,[6]SRate;
   rec_param(param);
 
   ///Envio dos valores lidos no DPV
