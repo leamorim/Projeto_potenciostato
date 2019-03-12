@@ -2,6 +2,19 @@
 """
 Created on Wed Feb 27 12:27:39 2019
 
+Este Script Python faz os seguintes procedimentos;
+
+    1) Envia para o esp os parâmetros usado no DPV
+        Envio na forma: PARAM_01/PARAM_02/PARAM_03/PARAM_04/PARAM_05/e onde 'e' sinaliza o fim do envio
+    2) Recebe os valores de corrente medidos
+        X --> Valor float referente a coordenada X
+        Y --> Valor inteiro referente a corrente faradaica/capacitiva
+        Y1 --> Valor inteiro referente a corrente faradaica/capacitiva
+    3) Recebe os valores de ajuste de escala
+        Zero
+        Fundo de escala Positivo
+        Fundo de escala Negativo
+
 @author: lucas
 """
 import numpy as np
@@ -113,4 +126,3 @@ plt.plot(x,y1, color = 'red',label = 'Curva Y1')
 plt.plot(x,y2, color = 'green',label = 'Curva Y1 - Y')
 plt.legend(loc='upper left')
 plt.show()
-
