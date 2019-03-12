@@ -58,7 +58,7 @@
 	baud_rate == 115200
 	Serial.setTimeout == 2000 
 
-##Fluxo 
+## Fluxo:
 
 Primeiro passo é a chamada da função rec_param.
 
