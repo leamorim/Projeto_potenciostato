@@ -88,12 +88,12 @@ while(1): #Loop que armazena os dados e encerra ao receber o 'end'
         else:
             x = np.concatenate((x,np.array(float(bytes.decode(data)))),axis = None)
 
-    data1 = esp.readline()[:-2]#Corrente faradaica ou capacitiva
+    data1 = esp.readline()[:-2]#Corrente faradaica
     if data1:
         y = np.concatenate((y,np.array(int(bytes.decode(data1)))),axis = None)
 
 
-    data2 = esp.readline()[:-2]#Corrente faradaica ou capacitiva  
+    data2 = esp.readline()[:-2]#Corrente capacitiva  
     if data2:
         y1 = np.concatenate((y1,np.array(int(bytes.decode(data2)))),axis = None)
         y2 = np.concatenate((y2,np.array(int(bytes.decode(data2)) - int(bytes.decode(data1)))),axis = None)
