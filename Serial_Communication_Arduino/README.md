@@ -64,7 +64,9 @@ Primeiro passo é a chamada da função rec_param.
 
 A função rec_param recebe como argumento um vetor de float cujo tamanho é o tamanho de parâmetros a serem recebidos,
 e onde os parâmetros ficarão salvos após a chamada da função.
-Passe como argumento algo do tipo: *float buffer [7]*, uma vez que os valores recebidos serão do tipo float
+
+Passe como argumento algo do tipo: *float buffer [7]*, uma vez que os valores recebidos serão do tipo float.
+
 Os parâmetros a serem recebidos são os seguintes: (Exatamente na mesma ordem):
 
 1. Current Range	**(índice referente ao range escolhido)**
