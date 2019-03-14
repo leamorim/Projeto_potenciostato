@@ -18,10 +18,10 @@
 
 ## BASELINE CORRECTION(ALPS)
 ### (não contém todos os parâmetros listados aqui, apenas os utilizados nos teste)
-* Lista de parâmetros: 
-    1. Array(Y) para calcular o baseline
-    2. lam --> Lambda que se refere a suavização e costuma ter valores entre 10^2 e 10^9
-    3. p --> Assimetria e costuma ter valores entre 0.1 e 0.001
++ Lista de parâmetros: 
+    - Array(Y) para calcular o baseline
+    - lam --> Lambda que se refere a suavização e costuma ter valores entre 10^2 e 10^9
+    - p --> Assimetria e costuma ter valores entre 0.1 e 0.001
     
 * Retorna: O algoritmo retorna um vetor que se refere ao baseline
 
@@ -45,15 +45,11 @@
 
 ## FINDPEAKS
 ### Função find_peaks()
-* Lista de parâmetros:
-        1. Array(Y) para se procurar os picos
-        2. height --> quantidade de picos a serem encontrados
++ Lista de parâmetros:
+        - Array(Y) para se procurar os picos
+        - height --> quantidade de picos a serem encontrados
     
-* Retorna: o índice dos picos e um dicionário com informações sobre os picos dependendo dos parâmetros passados
-    
-    Lista de parâmetros:
-        Array(y) para se procurar o máximo global
-    Retorna: o índice onde foi encontrado o máximo global
++ Retorna: o índice dos picos e um dicionário com informações sobre os picos dependendo dos parâmetros passados
 
         from scipy.signal import find_peaks
         #ret_y contém o índice do pico
@@ -61,9 +57,9 @@
 
 ### Função find_peak()
     
-* Lista de parâmetros:
-        1. Array(y) para se procurar o máximo global
-* Retorna: o índice onde foi encontrado o máximo global
++ Lista de parâmetros:
+        - Array(y) para se procurar o máximo global
++ Retorna: o índice onde foi encontrado o máximo global
 
         def find_peak(y): 
             N = y.size
