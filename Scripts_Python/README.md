@@ -1,6 +1,6 @@
-#Descrição das funções utilizadas para Suavização, Baseline Correction e Find Peaks
+# Descrição das funções utilizadas para Suavização, Baseline Correction e Find Peaks
 
-Smoothing Filter(Savitzky-Golav) / Baseline Correction(ALPS) / Find peaks(find_peaks scipy) e find_peak (Encontra máximo global)
+*Smoothing Filter(Savitzky-Golav) / Baseline Correction(ALPS) / Find peaks(find_peaks scipy) e find_peak (Encontra máximo global)*
 
 ## FILTRO DE SUAVIZAÇÃO (SAVITZKY-GOLAV)
 
