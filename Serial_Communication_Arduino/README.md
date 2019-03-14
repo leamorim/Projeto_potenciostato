@@ -79,7 +79,7 @@ Os parâmetros a serem recebidos são os seguintes: (Exatamente na mesma ordem):
 
 O próximo passo é chamar a função void **start_transmition()** para começar o envio dos valores lidos 
 
-Os valores a ser enviados devem seguir a seguinte ordem:
+Os valores devem ser enviados ponto a ponto na seguintes ordem:
 
 1. Float, com 4 casas decimais, representando a coordenada X 	**(Serial.println(X,4))** [Printa 4 casas decimais]
 2. Inteiro (Y) representando a corrente faradaica 				**(Serial.println(Y,DEC))**
