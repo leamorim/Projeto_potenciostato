@@ -4,12 +4,13 @@
 
 ## FILTRO DE SUAVIZAÇÃO (SAVITZKY-GOLAV)
 
-* Lista de parâmetros: 
-                        1. Array para suavizar
-                        2. window_length --> largura da janela do filtro
-                        3. polyorder --> ordem do polinômio a ser usado no filtro
-                        
-* Retorna: Vetor suavizado
++ Lista de parâmetros: 
+
+    - Array para suavizar
+    - window_length --> largura da janela do filtro
+    - polyorder --> ordem do polinômio a ser usado no filtro
+                    
++ Retorna: Vetor suavizado
 
         from scipy.signal import savgol_filter
         #valores usados nos testes --> window_length = 11 e polyorder = 2
@@ -58,17 +59,6 @@
         #ret_y contém o índice do pico
         ret_y, dic = find_peaks(y,height = 1)
 
-
-        def find_peak(y): 
-            N = y.size
-            max = y[0]
-            i_max = 0
-            for i in range (1,N):
-                if y[i] > max:
-                    max = y[i]
-                    i_max = i   
-            return i_max
-        i_max = pico(y)
 ### Função find_peak()
     
 * Lista de parâmetros:
