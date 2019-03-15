@@ -15,7 +15,8 @@
 	  while(!Serial.available()){}
 	  unsigned int i = 0;
 	  while(Serial.available()){
-	    char a = Serial.read();//A mensagem recebida é da forma PARAM_01/PARAM_02/PARAM_03/PARAM_04/PARAM_05/PARAM_06/PARAM_07/e onde 'e' indica o fim da tranmissão dos dados
+	    char a = Serial.read();
+	    //A mensagem recebida é da forma range_current/V_inicio/V_fim/V_pulso/V_passo/T_pulso/s_rate/e onde 'e' indica o fim da tranmissão dos dados
 	    if(a == '/'){
 	      param[i] = aux.toFloat();
 	      aux = ""; 
