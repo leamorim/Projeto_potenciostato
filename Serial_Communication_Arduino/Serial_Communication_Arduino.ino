@@ -13,7 +13,7 @@ void rec_param(float* param){//Função que recebe os parâmetros do DPV
   }
   Serial.println("start");
   
-  String aux;
+  String aux = "";
   while(!Serial.available()){}
   unsigned int i = 0;
   while(Serial.available()){
@@ -57,9 +57,9 @@ void end_transmition(){
 
 
 void loop() {
-  float param [5];//[0]Current_Range,[1]V_inicio,[2]V_fim,[3]V_pulso,[4]V_passo,[5]T_pulso,[6]SRate;
+  float param [7];//[0]Current_Range,[1]V_inicio,[2]V_fim,[3]V_pulso,[4]V_passo,[5]T_pulso,[6]SRate;
   rec_param(param);
-
+  
   ///Envio dos valores lidos no DPV
   start_transmition();
   
@@ -95,15 +95,5 @@ void loop() {
     delay(25);
   }
   
-  end_transmition();
-  ///Enviando os valores do fundo de escala:
-  unsigned int zero,f_positivo,f_negativo;
-  start_transmition();
-  zero = 600;
-  f_positivo = 300;
-  f_negativo = 350;
-  Serial.println(zero,DEC);
-  Serial.println(f_positivo,DEC);
-  Serial.println(f_negativo,DEC); 
   end_transmition();
 }
