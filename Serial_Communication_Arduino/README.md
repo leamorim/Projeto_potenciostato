@@ -73,10 +73,11 @@ Os parâmetros a serem recebidos são os seguintes: (Exatamente na mesma ordem):
 1. Current Range	**(índice referente ao range escolhido)**
 2. Pot. Inicial 	**(em Volts)**
 3. Pot. Final		**(em Volts)**
-4. Pot. Passo		**(em Volts)**
-5. Pot. Pulso		**(em Volts)**
-6. Tem. Pulso		**(em Volts)**
-7. SRate			**(em Volts/Segundo)**
+4. Pot. Passo		**(em MiliVolts)**
+5. Pot. Pulso		**(em MiliVolts)**
+6. Tem. Pulso		**(em Milisegundos)**
+7. Tem. Passo		**(em Milisegundos)**
+8. T_equil 			**(em Segundos)**
 
 O próximo passo é chamar a função void **start_transmition()** para começar o envio dos valores lidos 
 
